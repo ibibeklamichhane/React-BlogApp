@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import  SignupForm from './components/Signup'
+import LoginForm  from './components/Login';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import NoMatch from './components/Error';
+import Blogs from './components/Blogs';
+import ScrollToTop from "react-scroll-to-top";
+
+import { BrowserRouter as Router, Routes,Route  } from 'react-router-dom';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <Router>
+        <Navbar />
+     
+  
+    </Router>
+
+
+    <ScrollToTop smooth color="#ff0000" />
     </div>
   );
 }
