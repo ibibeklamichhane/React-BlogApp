@@ -15,9 +15,18 @@ function App() {
   return (
     <div className="App">
          <Router>
-        <Navbar />
+           <Navbar />
      
-  
+            <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/blogs" element={<Blogs/>} />
+              <Route path="/about" element={<About />} />
+              <Route path="/login" element={<LoginForm/>}/>
+              <Route path="/signin" element={<SignupForm/>}/>
+
+              <Route path="*" element={<NoMatch/>} />
+
+            </Routes>
     </Router>
 
 
