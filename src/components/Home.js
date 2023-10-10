@@ -1,8 +1,12 @@
-import React from 'react'
+import Blogs from './Blogs';
 
 function Home() {
+    const host = "http://localhost:5000";
   return (
-    <div>Home</div>
+    <div>
+    <Blogs/>
+    </div>
+
   )
 }
 

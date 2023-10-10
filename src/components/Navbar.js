@@ -21,7 +21,7 @@ function Navbar() {
           </div>
           <div class="hidden md:flex items-center space-x-4 pr-10">
             <Link to="/login" class="text-white hover:text-gray-300 transition duration-200">Login</Link>
-            <Link to="/logout" class="text-white hover:text-gray-300 transition duration-200">Logout</Link>
+            <Link to="/signin" class="text-white hover:text-gray-300 transition duration-200">SignUp</Link>
           </div>
         
         <button className="md:hidden text-white">

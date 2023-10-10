@@ -5,15 +5,18 @@ import Home from './components/Home';
 import About from './components/About';
 import NoMatch from './components/Error';
 import Blogs from './components/Blogs';
+import AddBlog from './components/AddBlogs';
 import ScrollToTop from "react-scroll-to-top";
 
 import { BrowserRouter as Router, Routes,Route  } from 'react-router-dom';
+import BlogState from "./context/blogs/BlogState";
 
 
 
 function App() {
   return (
     <div className="App">
+       <BlogState>
          <Router>
            <Navbar />
      
@@ -31,6 +34,7 @@ function App() {
 
 
     <ScrollToTop smooth color="#ff0000" />
+  </BlogState>
     </div>
   );
 }
